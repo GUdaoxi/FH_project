@@ -385,7 +385,7 @@ void MUX2_IRQHandler(void)
         TAU0->T2ISR = BIT0; 
 
         cnt_20ms++;
-        if(cnt_20ms >= 50) 
+        if(cnt_20ms >= 5) 
         {
             cnt_20ms = 0;
             flag_send_100ms = 1;
