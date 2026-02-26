@@ -170,35 +170,38 @@ static const uint8_t g_poll_id_list[] = {
 
 static uint8_t g_poll_idx = 0;
 
-/* ---------------- CRC8 ---------------- */
-static uint16_t CRC8_07_FF(const uint8_t *buf, uint16_t len)
+/* ---------------- CRC16 ---------------- */
+/*
+ * 现有协议实际发送 2 字节 CRC，因此这里使用 16-bit CRC。
+ * 保持原有位序与多项式实现，避免与对端协议不兼容。
+ */
+static uint16_t CRC16_1021_FFFF(const uint8_t *buf, uint16_t len)
 {
     uint16_t crc = 0xFFFF;
-    for(uint16_t i=0; i<len; i++)
+
+    for (uint16_t i = 0; i < len; i++)
     {
-      //g_rx_buf[i]=buf[i];
         crc ^= buf[i];
-        for(uint8_t b=0; b<8; b++)
+        for (uint8_t b = 0; b < 8; b++)
         {
-           if (crc & 0x0001)
-             {
-                 // 右移1位后与多项式 0x1021 异或
-                 crc = (crc >> 1) ^ 0x1021;
-             }
-             else
-             {
-                 // 最低位为0，直接右移1位
-                 crc = crc >> 1;
-             }
+            if (crc & 0x0001)
+            {
+                crc = (crc >> 1) ^ 0x1021;
+            }
+            else
+            {
+                crc >>= 1;
+            }
         }
     }
+
     return crc;
 }
 
 static uint8_t Proto_SendFrame(uint8_t id, const uint8_t *payload, uint8_t plen)
 {
     if (g_tx_busy) return 0;
-    if (plen > (uint8_t)(sizeof(g_tx_buf) - 4u)) return 0;
+    if (plen > (uint8_t)(sizeof(g_tx_buf) - 5u)) return 0;
 
     g_tx_buf[0] = PROTO_HEAD;
     g_tx_buf[1] = id;
@@ -206,7 +209,7 @@ static uint8_t Proto_SendFrame(uint8_t id, const uint8_t *payload, uint8_t plen)
 
     for (uint8_t i = 0; i < plen; i++)
         g_tx_buf[3u + i] = payload[i];
-      uint16_t crc = CRC8_07_FF((const uint8_t*)&g_tx_buf[1], (uint16_t)(2u + plen));
+    uint16_t crc = CRC16_1021_FFFF((const uint8_t*)&g_tx_buf[1], (uint16_t)(2u + plen));
     g_tx_buf[3u + plen] = crc>>8;
     g_tx_buf[4u + plen]=crc;
     g_tx_len  = (uint8_t)(5u + plen);
@@ -385,7 +388,7 @@ void MUX2_IRQHandler(void)
         TAU0->T2ISR = BIT0; 
 
         cnt_20ms++;
-        if(cnt_20ms >= 50) 
+        if(cnt_20ms >= 5) 
         {
             cnt_20ms = 0;
             flag_send_100ms = 1;
