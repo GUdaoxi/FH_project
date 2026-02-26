@@ -1,0 +1,565 @@
+{
+    "config": {
+        "bsln_always_update": false,
+        "bsln_use_lta": false,
+        "clock": {
+            "busClockFreq": 16000000,
+            "mutual_cap": [
+                {
+                    "modClockPsc": 1,
+                    "opClockSel": 0,
+                    "pllMul": 60,
+                    "pllRefPsc": 16,
+                    "prsCoeff": 142,
+                    "prsWidth": 8,
+                    "snsClockSel": 0,
+                    "snsClockSrc": 0,
+                    "sscCoeff": 33,
+                    "sscPoint": 0,
+                    "sscWidth": 6
+                },
+                {
+                    "modClockPsc": 1,
+                    "opClockSel": 0,
+                    "pllMul": 54,
+                    "pllRefPsc": 16,
+                    "prsCoeff": 142,
+                    "prsWidth": 8,
+                    "snsClockSel": 0,
+                    "snsClockSrc": 0,
+                    "sscCoeff": 33,
+                    "sscPoint": 0,
+                    "sscWidth": 6
+                },
+                {
+                    "modClockPsc": 1,
+                    "opClockSel": 0,
+                    "pllMul": 66,
+                    "pllRefPsc": 16,
+                    "prsCoeff": 142,
+                    "prsWidth": 8,
+                    "snsClockSel": 0,
+                    "snsClockSrc": 0,
+                    "sscCoeff": 33,
+                    "sscPoint": 0,
+                    "sscWidth": 6
+                }
+            ],
+            "opClockFreq": 16000000,
+            "self_cap": [
+                {
+                    "modClockPsc": 1,
+                    "opClockSel": 0,
+                    "pllMul": 60,
+                    "pllRefPsc": 16,
+                    "prsCoeff": 142,
+                    "prsWidth": 8,
+                    "snsClockSel": 0,
+                    "snsClockSrc": 1,
+                    "sscCoeff": 33,
+                    "sscPoint": 0,
+                    "sscWidth": 6
+                },
+                {
+                    "modClockPsc": 1,
+                    "opClockSel": 0,
+                    "pllMul": 54,
+                    "pllRefPsc": 16,
+                    "prsCoeff": 142,
+                    "prsWidth": 8,
+                    "snsClockSel": 0,
+                    "snsClockSrc": 1,
+                    "sscCoeff": 33,
+                    "sscPoint": 0,
+                    "sscWidth": 6
+                },
+                {
+                    "modClockPsc": 1,
+                    "opClockSel": 0,
+                    "pllMul": 66,
+                    "pllRefPsc": 16,
+                    "prsCoeff": 142,
+                    "prsWidth": 8,
+                    "snsClockSel": 0,
+                    "snsClockSrc": 1,
+                    "sscCoeff": 33,
+                    "sscPoint": 0,
+                    "sscWidth": 6
+                }
+            ]
+        },
+        "firmware_id": 2017218923,
+        "mc_calib_target": 50,
+        "mutual_cap_calib_method": 0,
+        "norm_ch_filter": {
+            "avg_en": true,
+            "fsiir_coeff_fast": 64,
+            "fsiir_coeff_slow": 16,
+            "fsiir_en": false,
+            "fsiir_sw_deb": 5,
+            "fsiir_sw_th": 10,
+            "iir_coeff": 64,
+            "iir_en": false,
+            "med_en": true,
+            "used": true
+        },
+        "prox_ch_filter": {
+            "adviir_en": false,
+            "avg_en": false,
+            "fsiir_coeff_fast": 0,
+            "fsiir_coeff_slow": 0,
+            "fsiir_en": false,
+            "fsiir_sw_deb": 0,
+            "fsiir_sw_th": 0,
+            "med_en": false,
+            "used": false
+        },
+        "sc_calib_target": 25,
+        "scan_period": 20,
+        "self_cap_calib_method": 3,
+        "timebase_tick": 1000,
+        "use_comm_noise_plugin": true,
+        "use_cs_calc": false,
+        "use_diff_timeout_plugin": true,
+        "use_lpm": false,
+        "use_margin_calib_plugin": true,
+        "use_multi_freq_scan": true,
+        "use_period_scan": false,
+        "use_shield": true,
+        "use_timebase": true,
+        "use_unified_idac_step": false,
+        "use_widget_init_multi_plugin": false
+    },
+    "pins": [
+        {
+            "channel": 1,
+            "pin": 4,
+            "port": 0
+        },
+        {
+            "channel": 3,
+            "pin": 6,
+            "port": 0
+        },
+        {
+            "channel": 9,
+            "pin": 6,
+            "port": 1
+        },
+        {
+            "channel": 6,
+            "pin": 1,
+            "port": 1
+        },
+        {
+            "channel": 11,
+            "pin": 8,
+            "port": 1
+        },
+        {
+            "channel": 8,
+            "pin": 5,
+            "port": 1
+        },
+        {
+            "channel": 10,
+            "pin": 7,
+            "port": 1
+        },
+        {
+            "channel": 13,
+            "pin": 14,
+            "port": 1
+        }
+    ],
+    "project": {
+        "auto_clock_gen": true,
+        "auto_port_gen": "",
+        "chip_model": "FM33FH0x6",
+        "chip_name": "FM33FH056",
+        "chip_series": "FM33FH0",
+        "chip_target": "FM33FH05X",
+        "debugger": "jlink",
+        "gen_lib_only": false,
+        "lib_ver": "v1.0",
+        "name": "0407",
+        "port_type": "Debugger",
+        "project_file": "C:/Users/nouriP/Desktop/复旦微触摸MCU资料整理/1120_test/1119_test/1119_test.tsiproj2",
+        "toolchain": "IAR",
+        "toolchain_version": "V7"
+    },
+    "sensors": [
+        {
+            "attrs": {
+                "name": "Button0_Sns0",
+                "rxChannel": 1,
+                "txChannel": 0,
+                "type": "SelfCap"
+            },
+            "id": 0,
+            "params": {
+                "idac0": 0,
+                "idac1": 0,
+                "idac2": 0
+            }
+        },
+        {
+            "attrs": {
+                "name": "Button1_Sns0",
+                "rxChannel": 3,
+                "txChannel": 0,
+                "type": "SelfCap"
+            },
+            "id": 1,
+            "params": {
+                "idac0": 0,
+                "idac1": 0,
+                "idac2": 0
+            }
+        },
+        {
+            "attrs": {
+                "name": "Button2_Sns0",
+                "rxChannel": 9,
+                "txChannel": 0,
+                "type": "SelfCap"
+            },
+            "id": 2,
+            "params": {
+                "idac0": 0,
+                "idac1": 0,
+                "idac2": 0
+            }
+        },
+        {
+            "attrs": {
+                "name": "Button3_Sns0",
+                "rxChannel": 6,
+                "txChannel": 0,
+                "type": "SelfCap"
+            },
+            "id": 3,
+            "params": {
+                "idac0": 0,
+                "idac1": 0,
+                "idac2": 0
+            }
+        },
+        {
+            "attrs": {
+                "name": "Button4_Sns0",
+                "rxChannel": 11,
+                "txChannel": 0,
+                "type": "SelfCap"
+            },
+            "id": 4,
+            "params": {
+                "idac0": 0,
+                "idac1": 0,
+                "idac2": 0
+            }
+        },
+        {
+            "attrs": {
+                "name": "Button5_Sns0",
+                "rxChannel": 8,
+                "txChannel": 0,
+                "type": "SelfCap"
+            },
+            "id": 5,
+            "params": {
+                "idac0": 0,
+                "idac1": 0,
+                "idac2": 0
+            }
+        },
+        {
+            "attrs": {
+                "name": "Button6_Sns0",
+                "rxChannel": 10,
+                "txChannel": 0,
+                "type": "SelfCap"
+            },
+            "id": 6,
+            "params": {
+                "idac0": 0,
+                "idac1": 0,
+                "idac2": 0
+            }
+        },
+        {
+            "attrs": {
+                "name": "Button7_Sns0",
+                "rxChannel": 13,
+                "txChannel": 0,
+                "type": "SelfCap"
+            },
+            "id": 7,
+            "params": {
+                "idac0": 0,
+                "idac1": 0,
+                "idac2": 0
+            }
+        }
+    ],
+    "shields": [
+    ],
+    "widgets": [
+        {
+            "attrs": {
+                "is_parallel": false,
+                "mutualCapSensorNum": 0,
+                "name": "Button0",
+                "selfCapSensorNum": 1,
+                "type": "SelfCapButton"
+            },
+            "params": {
+                "detConf": {
+                    "activeHys": 50,
+                    "activeTh": 500,
+                    "bslnIIRCoeff": 1,
+                    "bslnNegStopTimeout": 50,
+                    "negNoiseTh": 100,
+                    "noiseTh": 100,
+                    "offDebounce": 1,
+                    "onDebounce": 3
+                },
+                "idacCompStep": 3,
+                "idacMod0": 0,
+                "idacMod1": 0,
+                "idacMod2": 0,
+                "idacStep": 3,
+                "resolution": 8,
+                "sensitivity": 100,
+                "swClkDiv": 1
+            },
+            "sensor_ids": [
+                0
+            ]
+        },
+        {
+            "attrs": {
+                "is_parallel": false,
+                "mutualCapSensorNum": 0,
+                "name": "Button1",
+                "selfCapSensorNum": 1,
+                "type": "SelfCapButton"
+            },
+            "params": {
+                "detConf": {
+                    "activeHys": 50,
+                    "activeTh": 500,
+                    "bslnIIRCoeff": 1,
+                    "bslnNegStopTimeout": 50,
+                    "negNoiseTh": 100,
+                    "noiseTh": 100,
+                    "offDebounce": 1,
+                    "onDebounce": 3
+                },
+                "idacCompStep": 3,
+                "idacMod0": 0,
+                "idacMod1": 0,
+                "idacMod2": 0,
+                "idacStep": 3,
+                "resolution": 8,
+                "sensitivity": 100,
+                "swClkDiv": 1
+            },
+            "sensor_ids": [
+                1
+            ]
+        },
+        {
+            "attrs": {
+                "is_parallel": false,
+                "mutualCapSensorNum": 0,
+                "name": "Button2",
+                "selfCapSensorNum": 1,
+                "type": "SelfCapButton"
+            },
+            "params": {
+                "detConf": {
+                    "activeHys": 50,
+                    "activeTh": 500,
+                    "bslnIIRCoeff": 1,
+                    "bslnNegStopTimeout": 50,
+                    "negNoiseTh": 100,
+                    "noiseTh": 100,
+                    "offDebounce": 1,
+                    "onDebounce": 3
+                },
+                "idacCompStep": 3,
+                "idacMod0": 0,
+                "idacMod1": 0,
+                "idacMod2": 0,
+                "idacStep": 3,
+                "resolution": 8,
+                "sensitivity": 100,
+                "swClkDiv": 1
+            },
+            "sensor_ids": [
+                2
+            ]
+        },
+        {
+            "attrs": {
+                "is_parallel": false,
+                "mutualCapSensorNum": 0,
+                "name": "Button3",
+                "selfCapSensorNum": 1,
+                "type": "SelfCapButton"
+            },
+            "params": {
+                "detConf": {
+                    "activeHys": 50,
+                    "activeTh": 500,
+                    "bslnIIRCoeff": 1,
+                    "bslnNegStopTimeout": 50,
+                    "negNoiseTh": 100,
+                    "noiseTh": 100,
+                    "offDebounce": 1,
+                    "onDebounce": 3
+                },
+                "idacCompStep": 3,
+                "idacMod0": 0,
+                "idacMod1": 0,
+                "idacMod2": 0,
+                "idacStep": 3,
+                "resolution": 8,
+                "sensitivity": 100,
+                "swClkDiv": 1
+            },
+            "sensor_ids": [
+                3
+            ]
+        },
+        {
+            "attrs": {
+                "is_parallel": false,
+                "mutualCapSensorNum": 0,
+                "name": "Button4",
+                "selfCapSensorNum": 1,
+                "type": "SelfCapButton"
+            },
+            "params": {
+                "detConf": {
+                    "activeHys": 50,
+                    "activeTh": 500,
+                    "bslnIIRCoeff": 1,
+                    "bslnNegStopTimeout": 50,
+                    "negNoiseTh": 100,
+                    "noiseTh": 100,
+                    "offDebounce": 1,
+                    "onDebounce": 3
+                },
+                "idacCompStep": 3,
+                "idacMod0": 0,
+                "idacMod1": 0,
+                "idacMod2": 0,
+                "idacStep": 3,
+                "resolution": 8,
+                "sensitivity": 100,
+                "swClkDiv": 1
+            },
+            "sensor_ids": [
+                4
+            ]
+        },
+        {
+            "attrs": {
+                "is_parallel": false,
+                "mutualCapSensorNum": 0,
+                "name": "Button5",
+                "selfCapSensorNum": 1,
+                "type": "SelfCapButton"
+            },
+            "params": {
+                "detConf": {
+                    "activeHys": 50,
+                    "activeTh": 500,
+                    "bslnIIRCoeff": 1,
+                    "bslnNegStopTimeout": 50,
+                    "negNoiseTh": 100,
+                    "noiseTh": 100,
+                    "offDebounce": 1,
+                    "onDebounce": 3
+                },
+                "idacCompStep": 3,
+                "idacMod0": 0,
+                "idacMod1": 0,
+                "idacMod2": 0,
+                "idacStep": 3,
+                "resolution": 8,
+                "sensitivity": 100,
+                "swClkDiv": 1
+            },
+            "sensor_ids": [
+                5
+            ]
+        },
+        {
+            "attrs": {
+                "is_parallel": false,
+                "mutualCapSensorNum": 0,
+                "name": "Button6",
+                "selfCapSensorNum": 1,
+                "type": "SelfCapButton"
+            },
+            "params": {
+                "detConf": {
+                    "activeHys": 50,
+                    "activeTh": 500,
+                    "bslnIIRCoeff": 1,
+                    "bslnNegStopTimeout": 50,
+                    "negNoiseTh": 100,
+                    "noiseTh": 100,
+                    "offDebounce": 1,
+                    "onDebounce": 3
+                },
+                "idacCompStep": 3,
+                "idacMod0": 0,
+                "idacMod1": 0,
+                "idacMod2": 0,
+                "idacStep": 3,
+                "resolution": 8,
+                "sensitivity": 100,
+                "swClkDiv": 1
+            },
+            "sensor_ids": [
+                6
+            ]
+        },
+        {
+            "attrs": {
+                "is_parallel": false,
+                "mutualCapSensorNum": 0,
+                "name": "Button7",
+                "selfCapSensorNum": 1,
+                "type": "SelfCapButton"
+            },
+            "params": {
+                "detConf": {
+                    "activeHys": 50,
+                    "activeTh": 500,
+                    "bslnIIRCoeff": 1,
+                    "bslnNegStopTimeout": 50,
+                    "negNoiseTh": 100,
+                    "noiseTh": 100,
+                    "offDebounce": 1,
+                    "onDebounce": 3
+                },
+                "idacCompStep": 3,
+                "idacMod0": 0,
+                "idacMod1": 0,
+                "idacMod2": 0,
+                "idacStep": 3,
+                "resolution": 8,
+                "sensitivity": 100,
+                "swClkDiv": 1
+            },
+            "sensor_ids": [
+                7
+            ]
+        }
+    ]
+}

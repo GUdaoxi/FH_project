@@ -1,0 +1,940 @@
+###############################################################################
+#
+# IAR ELF Linker V8.30.1.114/W32 for ARM                  09/Feb/2026  23:25:54
+# Copyright 2007-2018 IAR Systems AB.
+#
+#    Output file  =  
+#        C:\Users\nouriP\Downloads\FM33LR0XX_IAR_¼Ä´æÆ÷°æ±¾\1128_demo_uart4\EWARM\0407\Exe\0407.out
+#    Map file     =  
+#        C:\Users\nouriP\Downloads\FM33LR0XX_IAR_¼Ä´æÆ÷°æ±¾\1128_demo_uart4\EWARM\0407\List\0407.map
+#    Command line =  
+#        -f C:\Users\nouriP\AppData\Local\Temp\EW4504.tmp
+#        (C:\Users\nouriP\Downloads\FM33LR0XX_IAR_¼Ä´æÆ÷°æ±¾\1128_demo_uart4\EWARM\0407\Obj\bdp.o
+#        C:\Users\nouriP\Downloads\FM33LR0XX_IAR_¼Ä´æÆ÷°æ±¾\1128_demo_uart4\EWARM\0407\Obj\bdp_mem_interface.o
+#        C:\Users\nouriP\Downloads\FM33LR0XX_IAR_¼Ä´æÆ÷°æ±¾\1128_demo_uart4\EWARM\0407\Obj\bdp_user.o
+#        C:\Users\nouriP\Downloads\FM33LR0XX_IAR_¼Ä´æÆ÷°æ±¾\1128_demo_uart4\EWARM\0407\Obj\fm33fh0xx_fl.o
+#        C:\Users\nouriP\Downloads\FM33LR0XX_IAR_¼Ä´æÆ÷°æ±¾\1128_demo_uart4\EWARM\0407\Obj\fm33fh0xx_fl_adc.o
+#        C:\Users\nouriP\Downloads\FM33LR0XX_IAR_¼Ä´æÆ÷°æ±¾\1128_demo_uart4\EWARM\0407\Obj\fm33fh0xx_fl_atim.o
+#        C:\Users\nouriP\Downloads\FM33LR0XX_IAR_¼Ä´æÆ÷°æ±¾\1128_demo_uart4\EWARM\0407\Obj\fm33fh0xx_fl_bstim16.o
+#        C:\Users\nouriP\Downloads\FM33LR0XX_IAR_¼Ä´æÆ÷°æ±¾\1128_demo_uart4\EWARM\0407\Obj\fm33fh0xx_fl_canfd.o
+#        C:\Users\nouriP\Downloads\FM33LR0XX_IAR_¼Ä´æÆ÷°æ±¾\1128_demo_uart4\EWARM\0407\Obj\fm33fh0xx_fl_cmu.o
+#        C:\Users\nouriP\Downloads\FM33LR0XX_IAR_¼Ä´æÆ÷°æ±¾\1128_demo_uart4\EWARM\0407\Obj\fm33fh0xx_fl_comp.o
+#        C:\Users\nouriP\Downloads\FM33LR0XX_IAR_¼Ä´æÆ÷°æ±¾\1128_demo_uart4\EWARM\0407\Obj\fm33fh0xx_fl_crc.o
+#        C:\Users\nouriP\Downloads\FM33LR0XX_IAR_¼Ä´æÆ÷°æ±¾\1128_demo_uart4\EWARM\0407\Obj\fm33fh0xx_fl_dac.o
+#        C:\Users\nouriP\Downloads\FM33LR0XX_IAR_¼Ä´æÆ÷°æ±¾\1128_demo_uart4\EWARM\0407\Obj\fm33fh0xx_fl_dma.o
+#        C:\Users\nouriP\Downloads\FM33LR0XX_IAR_¼Ä´æÆ÷°æ±¾\1128_demo_uart4\EWARM\0407\Obj\fm33fh0xx_fl_exti.o
+#        C:\Users\nouriP\Downloads\FM33LR0XX_IAR_¼Ä´æÆ÷°æ±¾\1128_demo_uart4\EWARM\0407\Obj\fm33fh0xx_fl_flash.o
+#        C:\Users\nouriP\Downloads\FM33LR0XX_IAR_¼Ä´æÆ÷°æ±¾\1128_demo_uart4\EWARM\0407\Obj\fm33fh0xx_fl_gpio.o
+#        C:\Users\nouriP\Downloads\FM33LR0XX_IAR_¼Ä´æÆ÷°æ±¾\1128_demo_uart4\EWARM\0407\Obj\fm33fh0xx_fl_i2c.o
+#        C:\Users\nouriP\Downloads\FM33LR0XX_IAR_¼Ä´æÆ÷°æ±¾\1128_demo_uart4\EWARM\0407\Obj\fm33fh0xx_fl_iwdt.o
+#        C:\Users\nouriP\Downloads\FM33LR0XX_IAR_¼Ä´æÆ÷°æ±¾\1128_demo_uart4\EWARM\0407\Obj\fm33fh0xx_fl_lptim16.o
+#        C:\Users\nouriP\Downloads\FM33LR0XX_IAR_¼Ä´æÆ÷°æ±¾\1128_demo_uart4\EWARM\0407\Obj\fm33fh0xx_fl_lpuart.o
+#        C:\Users\nouriP\Downloads\FM33LR0XX_IAR_¼Ä´æÆ÷°æ±¾\1128_demo_uart4\EWARM\0407\Obj\fm33fh0xx_fl_pmu.o
+#        C:\Users\nouriP\Downloads\FM33LR0XX_IAR_¼Ä´æÆ÷°æ±¾\1128_demo_uart4\EWARM\0407\Obj\fm33fh0xx_fl_qspi.o
+#        C:\Users\nouriP\Downloads\FM33LR0XX_IAR_¼Ä´æÆ÷°æ±¾\1128_demo_uart4\EWARM\0407\Obj\fm33fh0xx_fl_rtc.o
+#        C:\Users\nouriP\Downloads\FM33LR0XX_IAR_¼Ä´æÆ÷°æ±¾\1128_demo_uart4\EWARM\0407\Obj\fm33fh0xx_fl_sent.o
+#        C:\Users\nouriP\Downloads\FM33LR0XX_IAR_¼Ä´æÆ÷°æ±¾\1128_demo_uart4\EWARM\0407\Obj\fm33fh0xx_fl_spi.o
+#        C:\Users\nouriP\Downloads\FM33LR0XX_IAR_¼Ä´æÆ÷°æ±¾\1128_demo_uart4\EWARM\0407\Obj\fm33fh0xx_fl_svd.o
+#        C:\Users\nouriP\Downloads\FM33LR0XX_IAR_¼Ä´æÆ÷°æ±¾\1128_demo_uart4\EWARM\0407\Obj\fm33fh0xx_fl_tau.o
+#        C:\Users\nouriP\Downloads\FM33LR0XX_IAR_¼Ä´æÆ÷°æ±¾\1128_demo_uart4\EWARM\0407\Obj\fm33fh0xx_fl_uart.o
+#        C:\Users\nouriP\Downloads\FM33LR0XX_IAR_¼Ä´æÆ÷°æ±¾\1128_demo_uart4\EWARM\0407\Obj\fm33fh0xx_fl_wwdt.o
+#        C:\Users\nouriP\Downloads\FM33LR0XX_IAR_¼Ä´æÆ÷°æ±¾\1128_demo_uart4\EWARM\0407\Obj\fm33fh0xx_tsi_driver.o
+#        C:\Users\nouriP\Downloads\FM33LR0XX_IAR_¼Ä´æÆ÷°æ±¾\1128_demo_uart4\EWARM\0407\Obj\led.o
+#        C:\Users\nouriP\Downloads\FM33LR0XX_IAR_¼Ä´æÆ÷°æ±¾\1128_demo_uart4\EWARM\0407\Obj\main.o
+#        C:\Users\nouriP\Downloads\FM33LR0XX_IAR_¼Ä´æÆ÷°æ±¾\1128_demo_uart4\EWARM\0407\Obj\startup_fm33fh0xx.o
+#        C:\Users\nouriP\Downloads\FM33LR0XX_IAR_¼Ä´æÆ÷°æ±¾\1128_demo_uart4\EWARM\0407\Obj\svd.o
+#        C:\Users\nouriP\Downloads\FM33LR0XX_IAR_¼Ä´æÆ÷°æ±¾\1128_demo_uart4\EWARM\0407\Obj\system_fm33fh0xx.o
+#        C:\Users\nouriP\Downloads\FM33LR0XX_IAR_¼Ä´æÆ÷°æ±¾\1128_demo_uart4\EWARM\0407\Obj\timer.o
+#        C:\Users\nouriP\Downloads\FM33LR0XX_IAR_¼Ä´æÆ÷°æ±¾\1128_demo_uart4\EWARM\0407\Obj\tmp.o
+#        C:\Users\nouriP\Downloads\FM33LR0XX_IAR_¼Ä´æÆ÷°æ±¾\1128_demo_uart4\EWARM\0407\Obj\tsi.o
+#        C:\Users\nouriP\Downloads\FM33LR0XX_IAR_¼Ä´æÆ÷°æ±¾\1128_demo_uart4\EWARM\0407\Obj\tsi_calibration.o
+#        C:\Users\nouriP\Downloads\FM33LR0XX_IAR_¼Ä´æÆ÷°æ±¾\1128_demo_uart4\EWARM\0407\Obj\tsi_driver.o
+#        C:\Users\nouriP\Downloads\FM33LR0XX_IAR_¼Ä´æÆ÷°æ±¾\1128_demo_uart4\EWARM\0407\Obj\tsi_filter.o
+#        C:\Users\nouriP\Downloads\FM33LR0XX_IAR_¼Ä´æÆ÷°æ±¾\1128_demo_uart4\EWARM\0407\Obj\tsi_object.o
+#        C:\Users\nouriP\Downloads\FM33LR0XX_IAR_¼Ä´æÆ÷°æ±¾\1128_demo_uart4\EWARM\0407\Obj\tsi_plugin.o
+#        C:\Users\nouriP\Downloads\FM33LR0XX_IAR_¼Ä´æÆ÷°æ±¾\1128_demo_uart4\EWARM\0407\Obj\tsi_plugin_commnoise.o
+#        C:\Users\nouriP\Downloads\FM33LR0XX_IAR_¼Ä´æÆ÷°æ±¾\1128_demo_uart4\EWARM\0407\Obj\tsi_plugin_sc_margin_calibration.o
+#        C:\Users\nouriP\Downloads\FM33LR0XX_IAR_¼Ä´æÆ÷°æ±¾\1128_demo_uart4\EWARM\0407\Obj\tsi_plugin_widget_timeout.o
+#        C:\Users\nouriP\Downloads\FM33LR0XX_IAR_¼Ä´æÆ÷°æ±¾\1128_demo_uart4\EWARM\0407\Obj\tsi_processing.o
+#        C:\Users\nouriP\Downloads\FM33LR0XX_IAR_¼Ä´æÆ÷°æ±¾\1128_demo_uart4\EWARM\0407\Obj\tsi_utils.o
+#        C:\Users\nouriP\Downloads\FM33LR0XX_IAR_¼Ä´æÆ÷°æ±¾\1128_demo_uart4\EWARM\0407\Obj\Uart.o
+#        --redirect _Printf=_PrintfFull --redirect _Scanf=_ScanfFull
+#        --no_out_extension -o
+#        C:\Users\nouriP\Downloads\FM33LR0XX_IAR_¼Ä´æÆ÷°æ±¾\1128_demo_uart4\EWARM\0407\Exe\0407.out
+#        --map
+#        C:\Users\nouriP\Downloads\FM33LR0XX_IAR_¼Ä´æÆ÷°æ±¾\1128_demo_uart4\EWARM\0407\List\0407.map
+#        --config
+#        C:\Users\nouriP\Downloads\FM33LR0XX_IAR_¼Ä´æÆ÷°æ±¾\1128_demo_uart4\EWARM/../0407.icf
+#        --semihosting --entry __iar_program_start --vfe --text_out locale)
+#
+###############################################################################
+
+*******************************************************************************
+*** RUNTIME MODEL ATTRIBUTES
+***
+
+CppFlavor       = *
+__Heap_Handler  = Basic
+__SystemLibrary = DLib
+__dlib_version  = 6
+
+
+*******************************************************************************
+*** HEAP SELECTION
+***
+
+The basic heap was selected because no calls to memory allocation
+functions were found in the application outside of system library
+functions, and there are calls to deallocation functions in the
+application.
+
+
+*******************************************************************************
+*** PLACEMENT SUMMARY
+***
+
+"A0":  place at 0x0 { ro section .intvec };
+define block TSI_LIB_CONSTS
+   with fixed order, alignment = 4 {
+      section tsi.const.00_lib_handle, section tsi.const.01_widgets,
+      section tsi.const.02_sensors, section tsi.const.03_widget_ptrs,
+      section tsi.const.04_sensor_ptrs, section tsi.const.05_meta_widgets,
+      section tsi.const.06_meta_sensors, section tsi.const.07_driver,
+      section tsi.const.08_miscs, section tsi.const.09_scangroup.0_begin,
+      section tsi.const.09_scangroup.1_group, section tsi.const.10_desc_conf,
+      section tsi.const.11_plugins.0_begin,
+      section tsi.const.11_plugins.1_cb.0, section tsi.const.11_plugins.1_cb.1,
+      section tsi.const.11_plugins.1_cb.2, section tsi.const.11_plugins.1_cb.3,
+      section tsi.const.11_plugins.1_cb.4, section tsi.const.11_plugins.1_cb.5,
+      section tsi.const.11_plugins.1_cb.6, section tsi.const.11_plugins.1_cb.7,
+      section tsi.const.11_plugins.2_end };
+"P1":  place in [from 0x0 to 0x5'ffff] { ro, block TSI_LIB_CONSTS };
+define block TSI_LIB
+   with fixed order, alignment = 4 {
+      section tsi.00_lib_handle, section tsi.01_widgets,
+      section tsi.02_sensors, section tsi.03_driver, section tsi.04_miscs };
+define block CSTACK with size = 2K, alignment = 8 { };
+define block HEAP with size = 0M, alignment = 8 { };
+"P2":  place in [from 0x2000'0000 to 0x2000'7fff] {
+          rw, block TSI_LIB, block CSTACK, block HEAP };
+initialize by copy { rw };
+
+No sections matched the following patterns:
+
+  section tsi.const.00_lib_handle      in block TSI_LIB_CONSTS
+  section tsi.const.11_plugins.1_cb.2  in block TSI_LIB_CONSTS
+  section tsi.const.11_plugins.1_cb.3  in block TSI_LIB_CONSTS
+  section tsi.const.11_plugins.1_cb.4  in block TSI_LIB_CONSTS
+  section tsi.const.11_plugins.1_cb.5  in block TSI_LIB_CONSTS
+  section tsi.const.11_plugins.1_cb.6  in block TSI_LIB_CONSTS
+  section tsi.const.11_plugins.1_cb.7  in block TSI_LIB_CONSTS
+
+
+  Section                 Kind         Address    Size  Object
+  -------                 ----         -------    ----  ------
+"A0":                                             0xc0
+  .intvec                 ro code          0x0    0xc0  startup_fm33fh0xx.o [1]
+                                        - 0xc0    0xc0
+
+"P1":                                           0x82ea
+  .text                   ro code         0xc0  0x14d2  fm33fh0xx_tsi_driver.o [1]
+  .text                   ro code       0x1592     0x2  startup_fm33fh0xx.o [1]
+  .text                   ro code       0x1594    0x4e  ABImemset.o [4]
+  .text                   ro code       0x15e2     0x4  tsi.o [1]
+  .text                   ro code       0x15e6     0x2  startup_fm33fh0xx.o [1]
+  .text                   ro code       0x15e8   0x5f4  tsi_driver.o [1]
+  .text                   ro code       0x1bdc    0xe0  I32DivModFast.o [4]
+  .text                   ro code       0x1cbc    0x32  I64Mul.o [4]
+  .text                   ro code       0x1cee    0x6a  I64DivMod.o [4]
+  .text                   ro code       0x1d58     0x2  IntDivZer.o [4]
+  .text                   ro code       0x1d5a     0x2  startup_fm33fh0xx.o [1]
+  .text                   ro code       0x1d5c     0x2  I64DivZer.o [4]
+  .text                   ro code       0x1d5e     0x2  startup_fm33fh0xx.o [1]
+  .text                   ro code       0x1d60   0xcf0  tsi.o [1]
+  .text                   ro code       0x2a50    0x84  tsi_object.o [1]
+  .text                   ro code       0x2ad4   0x1d4  tsi_plugin.o [1]
+  .text                   ro code       0x2ca8   0xbe6  tsi_calibration.o [1]
+  .text                   ro code       0x388e     0x2  startup_fm33fh0xx.o [1]
+  .text                   ro code       0x3890   0xb9c  tsi_processing.o [1]
+  .text                   ro code       0x442c   0x8d4  main.o [1]
+  .text                   ro code       0x4d00     0x2  tsi.o [1]
+  .text                   ro code       0x4d02     0x4  tsi.o [1]
+  .text                   ro code       0x4d06     0x2  startup_fm33fh0xx.o [1]
+  .text                   ro code       0x4d08   0x14e  tsi_utils.o [1]
+  .text                   ro code       0x4e56     0x2  startup_fm33fh0xx.o [1]
+  .text                   ro code       0x4e58   0x17a  tsi_filter.o [1]
+  .text                   ro code       0x4fd2     0x2  startup_fm33fh0xx.o [1]
+  .text                   ro code       0x4fd4    0x5c  ABImemcpy.o [4]
+  .text                   ro code       0x5030    0x20  fm33fh0xx_fl.o [1]
+  .text                   ro code       0x5050   0x368  led.o [1]
+  .text                   ro code       0x53b8   0x720  bdp.o [1]
+  .text                   ro code       0x5ad8    0x26  FltToU32.o [3]
+  .text                   ro code       0x5afe     0x2  startup_fm33fh0xx.o [1]
+  .rodata                 const         0x5b00   0x740  bdp_user.o [1]
+  TSI_LIB_CONSTS                        0x6240   0x684  <Block>
+    tsi.const.01_widgets  const         0x6240   0x140  tsi_object.o [1]
+    tsi.const.02_sensors  const         0x6380   0x1c0  tsi_object.o [1]
+    tsi.const.03_widget_ptrs
+                          const         0x6540    0x20  tsi_object.o [1]
+    tsi.const.04_sensor_ptrs
+                          const         0x6560    0x20  tsi_object.o [1]
+    tsi.const.05_meta_widgets
+                          const         0x6580    0xc0  tsi_object.o [1]
+    tsi.const.06_meta_sensors
+                          const         0x6640   0x120  tsi_object.o [1]
+    tsi.const.07_driver   const         0x6760    0x34  tsi_object.o [1]
+    tsi.const.08_miscs    const         0x6794    0x60  tsi_object.o [1]
+    tsi.const.08_miscs    const         0x67f4    0x18  tsi_object.o [1]
+    tsi.const.08_miscs    const         0x680c     0x8  tsi_object.o [1]
+    tsi.const.09_scangroup.0_begin
+                          const         0x6814     0xc  tsi_object.o [1]
+    tsi.const.09_scangroup.1_group
+                          const         0x6820     0xc  tsi_object.o [1]
+    tsi.const.10_desc_conf
+                          const         0x682c    0x84  tsi_object.o [1]
+    tsi.const.11_plugins.0_begin
+                          const         0x68b0     0x4  tsi_plugin.o [1]
+    tsi.const.11_plugins.1_cb.0
+                          const         0x68b4     0x4  tsi_plugin_commnoise.o [1]
+    tsi.const.11_plugins.1_cb.1
+                          const         0x68b8     0x4  tsi_plugin_sc_margin_calibration.o [1]
+    tsi.const.11_plugins.1_cb.1
+                          const         0x68bc     0x4  tsi_plugin_widget_timeout.o [1]
+    tsi.const.11_plugins.2_end
+                          const         0x68c0     0x4  tsi_plugin.o [1]
+  .text                   ro code       0x68c4   0x4bc  bdp_mem_interface.o [1]
+  .text                   ro code       0x6d80   0x3c0  bdp_user.o [1]
+  .rodata                 const         0x7140   0x324  bdp_user.o [1]
+  .text                   ro code       0x7464   0x310  system_fm33fh0xx.o [1]
+  .text                   ro code       0x7774   0x278  tsi_plugin_commnoise.o [1]
+  .text                   ro code       0x79ec   0x18c  tsi_plugin_widget_timeout.o [1]
+  .rodata                 const         0x7b78   0x100  bdp_mem_interface.o [1]
+  .rodata                 const         0x7c78   0x100  bdp_mem_interface.o [1]
+  .rodata                 const         0x7d78   0x100  bdp_mem_interface.o [1]
+  .text                   ro code       0x7e78    0xac  tsi_plugin_sc_margin_calibration.o [1]
+  .rodata                 const         0x7f24    0x74  fm33fh0xx_tsi_driver.o [1]
+  .rodata                 const         0x7f98    0x64  tsi_driver.o [1]
+  .text                   ro code       0x7ffc    0x50  timer.o [1]
+  .text                   ro code       0x804c    0x3c  zero_init3.o [4]
+  .text                   ro code       0x8088    0x3c  packbits_init_single.o [4]
+  .text                   ro code       0x80c4    0x30  Uart.o [1]
+  .text                   ro code       0x80f4    0x30  iarttio.o [5]
+  .text                   ro code       0x8124     0x8  XShttio.o [2]
+  .rodata                 const         0x812c    0x28  tsi_plugin_commnoise.o [1]
+  .rodata                 const         0x8154    0x28  tsi_plugin_sc_margin_calibration.o [1]
+  .rodata                 const         0x817c    0x28  tsi_plugin_widget_timeout.o [1]
+  .text                   ro code       0x81a4    0x28  data_init.o [4]
+  .iar.init_table         const         0x81cc    0x50  - Linker created -
+  .rodata                 const         0x821c    0x20  fm33fh0xx_tsi_driver.o [1]
+  .text                   ro code       0x823c    0x1e  cmain.o [4]
+  .text                   ro code       0x825a     0x4  low_level_init.o [2]
+  .text                   ro code       0x825e     0x8  exit.o [2]
+  .text                   ro code       0x8266     0x2  startup_fm33fh0xx.o [1]
+  .text                   ro code       0x8268     0xa  cexit.o [4]
+  .text                   ro code       0x8272     0x2  startup_fm33fh0xx.o [1]
+  .text                   ro code       0x8274    0x14  exit.o [5]
+  .rodata                 const         0x8288    0x1c  bdp_user.o [1]
+  .rodata                 const         0x82a4    0x1c  tsi_calibration.o [1]
+  .rodata                 const         0x82c0    0x1c  tsi_utils.o [1]
+  .rodata                 const         0x82dc    0x18  bdp.o [1]
+  .rodata                 const         0x82f4    0x18  bdp_mem_interface.o [1]
+  .rodata                 const         0x830c    0x10  tsi_object.o [1]
+  .text                   ro code       0x831c    0x10  startup_fm33fh0xx.o [1]
+  .text                   ro code       0x832c     0xc  cstartup_M.o [4]
+  .rodata                 const         0x8338     0x8  main.o [1]
+  .rodata                 const         0x8340     0x8  main.o [1]
+  .rodata                 const         0x8348     0x4  fm33fh0xx_tsi_driver.o [1]
+  .text                   ro code       0x834c     0x2  startup_fm33fh0xx.o [1]
+  .text                   ro code       0x834e     0x2  startup_fm33fh0xx.o [1]
+  .text                   ro code       0x8350     0x2  startup_fm33fh0xx.o [1]
+  .text                   ro code       0x8352     0x2  startup_fm33fh0xx.o [1]
+  .text                   ro code       0x8354     0x2  startup_fm33fh0xx.o [1]
+  .text                   ro code       0x8356     0x2  startup_fm33fh0xx.o [1]
+  .text                   ro code       0x8358     0x2  startup_fm33fh0xx.o [1]
+  .text                   ro code       0x835a     0x2  startup_fm33fh0xx.o [1]
+  .text                   ro code       0x835c     0x2  startup_fm33fh0xx.o [1]
+  .text                   ro code       0x835e     0x2  startup_fm33fh0xx.o [1]
+  .text                   ro code       0x8360     0x2  startup_fm33fh0xx.o [1]
+  .text                   ro code       0x8362     0x2  startup_fm33fh0xx.o [1]
+  .text                   ro code       0x8364     0x2  startup_fm33fh0xx.o [1]
+  .text                   ro code       0x8366     0x2  startup_fm33fh0xx.o [1]
+  .text                   ro code       0x8368     0x2  startup_fm33fh0xx.o [1]
+  .text                   ro code       0x836a     0x2  startup_fm33fh0xx.o [1]
+  .text                   ro code       0x836c     0x2  startup_fm33fh0xx.o [1]
+  .text                   ro code       0x836e     0x2  startup_fm33fh0xx.o [1]
+  .text                   ro code       0x8370     0x2  startup_fm33fh0xx.o [1]
+  .rodata                 const         0x8372     0x1  main.o [1]
+  .rodata                 const         0x8373     0x0  zero_init3.o [4]
+  .rodata                 const         0x8373     0x0  packbits_init_single.o [4]
+  Initializer bytes       const         0x8373    0x24  <for P2-1>
+  Initializer bytes       const         0x8397    0x13  <for section tsi.00_lib_handle-1>
+                                      - 0x83aa  0x82ea
+
+"P2", part 1 of 3:                               0x56a
+  TSI_LIB                          0x2000'0000   0x4ec  <Block>
+    section tsi.00_lib_handle-1
+                                   0x2000'0000    0x44  <Init block>
+      tsi.00_lib_handle   inited   0x2000'0000    0x44  tsi_object.o [1]
+    tsi.01_widgets        zero     0x2000'0044   0x140  tsi_object.o [1]
+    tsi.02_sensors        zero     0x2000'0184   0x1c0  tsi_object.o [1]
+    tsi.03_driver         zero     0x2000'0344    0x34  tsi_object.o [1]
+    tsi.04_miscs          zero     0x2000'0378    0x20  tsi_object.o [1]
+    tsi.04_miscs          zero     0x2000'0398    0x20  tsi_object.o [1]
+    tsi.04_miscs          zero     0x2000'03b8    0x20  tsi_object.o [1]
+    tsi.04_miscs          zero     0x2000'03d8    0x20  tsi_object.o [1]
+    tsi.04_miscs          zero     0x2000'03f8    0x20  tsi_object.o [1]
+    tsi.04_miscs          zero     0x2000'0418    0x20  tsi_object.o [1]
+    tsi.04_miscs          zero     0x2000'0438    0x20  tsi_object.o [1]
+    tsi.04_miscs          zero     0x2000'0458    0x20  tsi_object.o [1]
+    tsi.04_miscs          zero     0x2000'0478     0xc  tsi_object.o [1]
+    tsi.04_miscs          zero     0x2000'0484    0x60  tsi_object.o [1]
+    tsi.04_miscs          zero     0x2000'04e4     0x1  tsi_object.o [1]
+    tsi.04_miscs          zero     0x2000'04e5     0x1  tsi_object.o [1]
+    tsi.04_miscs          zero     0x2000'04e6     0x1  tsi_object.o [1]
+    tsi.04_miscs          zero     0x2000'04e7     0x1  tsi_object.o [1]
+    tsi.04_miscs          zero     0x2000'04e8     0x1  tsi_object.o [1]
+    tsi.04_miscs          zero     0x2000'04e9     0x1  tsi_object.o [1]
+    tsi.04_miscs          zero     0x2000'04ea     0x1  tsi_object.o [1]
+    tsi.04_miscs          zero     0x2000'04eb     0x1  tsi_object.o [1]
+  P2-1                             0x2000'04ec    0x7e  <Init block>
+    .data                 inited   0x2000'04ec    0x50  led.o [1]
+    .data                 inited   0x2000'053c     0x4  main.o [1]
+    .data                 inited   0x2000'0540     0x4  system_fm33fh0xx.o [1]
+    .data                 inited   0x2000'0544     0x4  system_fm33fh0xx.o [1]
+    .data                 inited   0x2000'0548     0xc  tsi.o [1]
+    .data                 inited   0x2000'0554     0xc  tsi_calibration.o [1]
+    .data                 inited   0x2000'0560     0x8  XShttio.o [2]
+    .data                 inited   0x2000'0568     0x2  main.o [1]
+                                 - 0x2000'056a   0x56a
+
+"P2", part 2 of 3:                               0x5f8
+  .bss                    zero     0x2000'056c   0x404  bdp_mem_interface.o [1]
+  .bss                    zero     0x2000'0970    0xa8  fm33fh0xx_tsi_driver.o [1]
+  .bss                    zero     0x2000'0a18    0x50  main.o [1]
+  .bss                    zero     0x2000'0a68    0x40  main.o [1]
+  .bss                    zero     0x2000'0aa8    0x20  tsi_plugin_widget_timeout.o [1]
+  .bss                    zero     0x2000'0ac8    0x20  tsi_plugin_widget_timeout.o [1]
+  .bss                    zero     0x2000'0ae8    0x1c  bdp.o [1]
+  .bss                    zero     0x2000'0b04    0x18  bdp_mem_interface.o [1]
+  .bss                    zero     0x2000'0b1c    0x10  main.o [1]
+  .bss                    zero     0x2000'0b2c     0x8  bdp_mem_interface.o [1]
+  .bss                    zero     0x2000'0b34     0x8  bdp_mem_interface.o [1]
+  .bss                    zero     0x2000'0b3c     0x8  tsi_processing.o [1]
+  .bss                    zero     0x2000'0b44     0x4  bdp_user.o [1]
+  .bss                    zero     0x2000'0b48     0x4  tsi_plugin_widget_timeout.o [1]
+  .bss                    zero     0x2000'0b4c     0x2  tsi.o [1]
+  .bss                    zero     0x2000'0b4e     0x2  tsi_calibration.o [1]
+  .bss                    zero     0x2000'0b50     0x1  bdp_mem_interface.o [1]
+  .bss                    zero     0x2000'0b51     0x1  bdp_mem_interface.o [1]
+  .bss                    zero     0x2000'0b52     0x1  led.o [1]
+  .bss                    zero     0x2000'0b53     0x1  main.o [1]
+  .bss                    zero     0x2000'0b54     0x1  main.o [1]
+  .bss                    zero     0x2000'0b55     0x1  main.o [1]
+  .bss                    zero     0x2000'0b56     0x1  main.o [1]
+  .bss                    zero     0x2000'0b57     0x1  main.o [1]
+  .bss                    zero     0x2000'0b58     0x1  main.o [1]
+  .bss                    zero     0x2000'0b59     0x1  main.o [1]
+  .bss                    zero     0x2000'0b5a     0x1  main.o [1]
+  .bss                    zero     0x2000'0b5b     0x1  main.o [1]
+  .bss                    zero     0x2000'0b5c     0x1  main.o [1]
+  .bss                    zero     0x2000'0b5d     0x1  main.o [1]
+  .bss                    zero     0x2000'0b5e     0x1  timer.o [1]
+  .bss                    zero     0x2000'0b5f     0x1  tsi_plugin_commnoise.o [1]
+  .bss                    zero     0x2000'0b60     0x1  tsi_plugin_commnoise.o [1]
+  .bss                    zero     0x2000'0b61     0x1  tsi_processing.o [1]
+                                 - 0x2000'0b62   0x5f6
+
+"P2", part 3 of 3:                               0x800
+  CSTACK                           0x2000'0b68   0x800  <Block>
+    CSTACK                uninit   0x2000'0b68   0x800  <Block tail>
+                                 - 0x2000'1368   0x800
+
+Unused ranges:
+
+         From           To      Size
+         ----           --      ----
+       0x83aa     0x5'ffff  0x5'7c56
+  0x2000'056a  0x2000'056b       0x2
+  0x2000'0b64  0x2000'0b67       0x4
+  0x2000'1368  0x2000'7fff    0x6c98
+
+
+*******************************************************************************
+*** INIT TABLE
+***
+
+          Address      Size
+          -------      ----
+Zero (__iar_zero_init3)
+    5 destination ranges, total size 0xa9e:
+          0x2000'0044  0x140
+          0x2000'0184  0x1c0
+          0x2000'0344   0x34
+          0x2000'0378  0x174
+          0x2000'056c  0x5f6
+
+Copy/packbits (__iar_packbits_init_single3)
+    1 source range, total size 0x24 (28% of destination):
+               0x8373   0x24
+    1 destination range, total size 0x7e:
+          0x2000'04ec   0x7e
+
+Copy/packbits (__iar_packbits_init_single3)
+    1 source range, total size 0x13 (27% of destination):
+               0x8397   0x13
+    1 destination range, total size 0x44:
+          0x2000'0000   0x44
+
+
+
+*******************************************************************************
+*** MODULE SUMMARY
+***
+
+    Module                              ro code  ro data  rw data
+    ------                              -------  -------  -------
+command line/config:
+    -------------------------------------------------------------
+    Total:
+
+C:\Users\nouriP\Downloads\FM33LR0XX_IAR_¼Ä´æÆ÷°æ±¾\1128_demo_uart4\EWARM\0407\Obj: [1]
+    Uart.o                                   48
+    bdp.o                                 1 824       24       28
+    bdp_mem_interface.o                   1 212      792    1 070
+    bdp_user.o                              960    2 688        4
+    fm33fh0xx_fl.o                           32
+    fm33fh0xx_tsi_driver.o                5 330      152      168
+    led.o                                   872       22       81
+    main.o                                2 260       20      177
+    startup_fm33fh0xx.o                     268
+    system_fm33fh0xx.o                      784        2        8
+    timer.o                                  80                 1
+    tsi.o                                 3 322        3       14
+    tsi_calibration.o                     3 046       32       14
+    tsi_driver.o                          1 524      100
+    tsi_filter.o                            378
+    tsi_object.o                            132    1 683    1 260
+    tsi_plugin.o                            468        8
+    tsi_plugin_commnoise.o                  632       44        2
+    tsi_plugin_sc_margin_calibration.o      172       44
+    tsi_plugin_widget_timeout.o             396       44       68
+    tsi_processing.o                      2 972                 9
+    tsi_utils.o                             334       28
+    -------------------------------------------------------------
+    Total:                               27 046    5 686    2 904
+
+dl6M_tlf.a: [2]
+    XShttio.o                                 8        2        8
+    exit.o                                    8
+    low_level_init.o                          4
+    -------------------------------------------------------------
+    Total:                                   20        2        8
+
+m6M_tl.a: [3]
+    FltToU32.o                               38
+    -------------------------------------------------------------
+    Total:                                   38
+
+rt6M_tl.a: [4]
+    ABImemcpy.o                              92
+    ABImemset.o                              78
+    I32DivModFast.o                         224
+    I64DivMod.o                             106
+    I64DivZer.o                               2
+    I64Mul.o                                 50
+    IntDivZer.o                               2
+    cexit.o                                  10
+    cmain.o                                  30
+    cstartup_M.o                             12
+    data_init.o                              40
+    packbits_init_single.o                   60
+    zero_init3.o                             60
+    -------------------------------------------------------------
+    Total:                                  766
+
+shb_l.a: [5]
+    exit.o                                   20
+    iarttio.o                                48
+    -------------------------------------------------------------
+    Total:                                   68
+
+    Linker created                                    80    2 048
+-----------------------------------------------------------------
+    Grand Total:                         27 938    5 768    4 960
+
+
+*******************************************************************************
+*** ENTRY LIST
+***
+
+Entry                       Address   Size  Type      Object
+-----                       -------   ----  ----      ------
+.iar.init_table$$Base        0x81cc          --   Gb  - Linker created -
+.iar.init_table$$Limit       0x821c          --   Gb  - Linker created -
+?main                        0x823d         Code  Gb  cmain.o [4]
+App_Send                     0x47c5   0x18  Code  Gb  main.o [1]
+App_SendRGB                  0x47dd   0x20  Code  Gb  main.o [1]
+App_SendRGB_Cycle_R_G_B_W
+                             0x47fd   0x58  Code  Lc  main.o [1]
+App_SendRGB_Cycle_R_G_B_W::step
+                        0x2000'0b5b    0x1  Data  Lc  main.o [1]
+App_SendStatus               0x487d   0x48  Code  Gb  main.o [1]
+BDP_Callback                 0x8288   0x1c  Data  Gb  bdp_user.o [1]
+BDP_DataInCallback           0x5775  0x1bc  Code  Lc  bdp.o [1]
+BDP_DataOutCallback          0x5415  0x360  Code  Lc  bdp.o [1]
+BDP_DevDataCallback          0x82dc   0x18  Data  Gb  bdp.o [1]
+BDP_GetMemory                0x6efb   0x5e  Code  Lc  bdp_user.o [1]
+BDP_Handle              0x2000'0ae8   0x1c  Data  Lc  bdp.o [1]
+BDP_Handler                  0x53df    0xc  Code  Gb  bdp.o [1]
+BDP_Init                     0x53b9   0x1a  Code  Gb  bdp.o [1]
+BDP_IsValidMemory            0x6e51   0x40  Code  Lc  bdp_user.o [1]
+BDP_MemItf                   0x82f4   0x18  Data  Gb  bdp_mem_interface.o [1]
+BDP_MemRegionList            0x7140  0x324  Data  Lc  bdp_user.o [1]
+BDP_ResetVariables           0x53f3   0x1c  Code  Lc  bdp.o [1]
+BDP_SetMemory                0x6e91   0x6a  Code  Lc  bdp_user.o [1]
+BDP_SetValueMapping          0x53eb    0x8  Code  Gb  bdp.o [1]
+BDP_SetupInCallback          0x5a45   0x88  Code  Lc  bdp.o [1]
+BDP_SetupOutCallback         0x5981   0xbe  Code  Lc  bdp.o [1]
+BDP_SetupTokenCallback       0x5931   0x4c  Code  Lc  bdp.o [1]
+BDP_Start                    0x53d3    0xc  Code  Gb  bdp.o [1]
+BDP_TSIValueList             0x5b00  0x740  Data  Lc  bdp_user.o [1]
+BDP_UserDeinit               0x6d93    0x2  Code  Lc  bdp_user.o [1]
+BDP_UserGetRegister          0x6def   0x62  Code  Lc  bdp_user.o [1]
+BDP_UserInit                 0x6d81   0x12  Code  Lc  bdp_user.o [1]
+BDP_UserSetRegister          0x6d95   0x5a  Code  Lc  bdp_user.o [1]
+BSP_ROUND                    0x4593   0x18  Code  Gb  main.o [1]
+CRC16                        0x6be9   0x3e  Code  Lc  bdp_mem_interface.o [1]
+CRC8                         0x6bc1   0x22  Code  Lc  bdp_mem_interface.o [1]
+CRC8_07_FF                   0x469d   0x48  Code  Lc  main.o [1]
+CSTACK$$Base            0x2000'0b68          --   Gb  - Linker created -
+CSTACK$$Limit           0x2000'1368          --   Gb  - Linker created -
+Delay_Count             0x2000'0b52    0x1  Data  Gb  led.o [1]
+FL_CMU_IsActiveFlag_PLLReady
+                             0x453f    0xe  Code  Lc  main.o [1]
+FL_CMU_PLL_Disable           0x4575    0xc  Code  Lc  main.o [1]
+FL_CMU_PLL_Enable            0x4569    0xc  Code  Lc  main.o [1]
+FL_CMU_PLL_SetClockSource
+                             0x455b    0xe  Code  Lc  main.o [1]
+FL_CMU_PLL_SetPrescaler
+                             0x454d    0xe  Code  Lc  main.o [1]
+FL_CMU_PLL_WriteMultiplier
+                             0x452f   0x10  Code  Lc  main.o [1]
+FL_CMU_RCHF_SetFrequency
+                             0x4513    0xe  Code  Lc  main.o [1]
+FL_CMU_RCHF_WriteTrimValue
+                             0x4521    0xe  Code  Lc  main.o [1]
+FL_CMU_SetAHBPrescaler       0x44f7    0xe  Code  Lc  main.o [1]
+FL_CMU_SetAPB1Prescaler
+                             0x44e9    0xe  Code  Lc  main.o [1]
+FL_CMU_SetSystemClockSource
+                             0x4505    0xe  Code  Lc  main.o [1]
+FL_FLASH_SetCodeReadWait
+                             0x4581    0xc  Code  Lc  main.o [1]
+FL_GPIO_ResetOutputPin       0x1d6b    0xa  Code  Lc  tsi.o [1]
+FL_GPIO_SetOutputPin         0x1d61    0xa  Code  Lc  tsi.o [1]
+FL_IWDT_ReloadCounter        0x458d    0x6  Code  Lc  main.o [1]
+FL_Init                      0x5031    0x8  Code  Gb  fm33fh0xx_fl.o [1]
+GetRegister                  0x7041   0xe6  Code  Lc  bdp_user.o [1]
+INSTANCES                    0x8348    0x4  Data  Lc  fm33fh0xx_tsi_driver.o [1]
+Led1DrvI2CWriteByte          0x51c1   0x8e  Code  Gb  led.o [1]
+Led1DrvWriteCmd              0x52ed   0x16  Code  Gb  led.o [1]
+Led1DrvWriteRam              0x5319   0x2e  Code  Gb  led.o [1]
+Led1Init                     0x5375   0x20  Code  Gb  led.o [1]
+Led2DrvI2CWriteByte          0x524f   0x8e  Code  Gb  led.o [1]
+Led2DrvWriteCmd              0x5303   0x16  Code  Gb  led.o [1]
+Led2DrvWriteRam              0x5347   0x2e  Code  Gb  led.o [1]
+Led2Init                     0x5395   0x20  Code  Gb  led.o [1]
+MEM_ITF_DeInit               0x6901    0x8  Code  Lc  bdp_mem_interface.o [1]
+MEM_ITF_Handler              0x6955  0x16e  Code  Lc  bdp_mem_interface.o [1]
+MEM_ITF_Init                 0x68c5   0x3c  Code  Lc  bdp_mem_interface.o [1]
+MEM_ITF_Reset                0x6919   0x3c  Code  Lc  bdp_mem_interface.o [1]
+MEM_ITF_Start                0x6909    0x8  Code  Lc  bdp_mem_interface.o [1]
+MEM_ITF_Stop                 0x6911    0x8  Code  Lc  bdp_mem_interface.o [1]
+MUX0_IRQHandler              0x7ffd   0x2e  Code  Gb  timer.o [1]
+MUX11_IRQHandler             0x4971   0xba  Code  Gb  main.o [1]
+MUX19_IRQHandler             0x4c39    0xc  Code  Gb  main.o [1]
+MUX1_IRQHandler              0x4c59   0x3a  Code  Gb  main.o [1]
+MUX2_IRQHandler              0x4a99   0x52  Code  Gb  main.o [1]
+MUX2_IRQHandler::cnt_20ms
+                        0x2000'0b5d    0x1  Data  Lc  main.o [1]
+MUX4_IRQHandler              0x802b   0x12  Code  Gb  timer.o [1]
+MUX9_IRQHandler              0x80c5   0x2a  Code  Gb  Uart.o [1]
+Master_UART5_SendOnce_100ms
+                             0x48c5   0x88  Code  Gb  main.o [1]
+NVIC_ClearPendingIRQ           0xf1   0x18  Code  Lc  fm33fh0xx_tsi_driver.o [1]
+NVIC_DisableIRQ                0xd9   0x18  Code  Lc  fm33fh0xx_tsi_driver.o [1]
+NVIC_DisableIRQ              0x4445   0x18  Code  Lc  main.o [1]
+NVIC_EnableIRQ                 0xc1   0x18  Code  Lc  fm33fh0xx_tsi_driver.o [1]
+NVIC_EnableIRQ               0x442d   0x18  Code  Lc  main.o [1]
+NVIC_SetPriority              0x109   0x8c  Code  Lc  fm33fh0xx_tsi_driver.o [1]
+NVIC_SetPriority             0x445d   0x8c  Code  Lc  main.o [1]
+PORTS                        0x821c   0x20  Data  Lc  fm33fh0xx_tsi_driver.o [1]
+ProcessData                  0x6b01   0xc0  Code  Lc  bdp_mem_interface.o [1]
+Proto_SendFrame              0x4701   0xb6  Code  Lc  main.o [1]
+Region$$Table$$Base          0x81cc          --   Gb  - Linker created -
+Region$$Table$$Limit         0x821c          --   Gb  - Linker created -
+SetAckPacket                 0x6ac3   0x2e  Code  Lc  bdp_mem_interface.o [1]
+SetRegister                  0x6f59   0xda  Code  Lc  bdp_user.o [1]
+SoftI2C1_Start               0x5051   0x62  Code  Gb  led.o [1]
+SoftI2C1_Stop                0x50b3   0x56  Code  Gb  led.o [1]
+SoftI2C2_Start               0x5109   0x62  Code  Gb  led.o [1]
+SoftI2C2_Stop                0x516b   0x56  Code  Gb  led.o [1]
+SystemClockInit              0x4bbb   0x7a  Code  Lc  main.o [1]
+SystemCoreClock         0x2000'0544    0x4  Data  Gb  system_fm33fh0xx.o [1]
+SystemCoreClockUpdate        0x750d  0x10a  Code  Gb  system_fm33fh0xx.o [1]
+SystemInit                   0x7631   0xd6  Code  Gb  system_fm33fh0xx.o [1]
+SystemPLLClockUpdate         0x7465   0xa8  Code  Lc  system_fm33fh0xx.o [1]
+TSI_Baseline_Init            0x3acb   0x10  Code  Gb  tsi_processing.o [1]
+TSI_Baseline_Update          0x3adb   0x18  Code  Gb  tsi_processing.o [1]
+TSI_CalcLinearCentroid       0x4345   0x76  Code  Lc  tsi_processing.o [1]
+TSI_CalcMutualCapSensorCap
+                             0x4da9   0x76  Code  Gb  tsi_utils.o [1]
+TSI_CalcRadialCentroid       0x43bb   0x68  Code  Lc  tsi_processing.o [1]
+TSI_CalcSelfCapSensorCap
+                             0x4d09   0xa0  Code  Gb  tsi_utils.o [1]
+TSI_CalibrateAllWidgets
+                             0x2ca9   0x60  Code  Gb  tsi_calibration.o [1]
+TSI_CalibrateMutualCapWidget
+                             0x2f69   0x4c  Code  Gb  tsi_calibration.o [1]
+TSI_CalibrateSelfCapWidget
+                             0x2d09  0x242  Code  Gb  tsi_calibration.o [1]
+TSI_CalibrateSelfCapWidgetIDAC
+                             0x2fb5   0x62  Code  Lc  tsi_calibration.o [1]
+TSI_ClockConf           0x2000'0484   0x60  Data  Gb  tsi_object.o [1]
+TSI_ClockConfConstInit       0x6794   0x60  Data  Gb  tsi_object.o [1]
+TSI_ClockSetupForCurrFreq
+                             0x1b89   0x54  Code  Lc  tsi_driver.o [1]
+TSI_ConfDesc                 0x682c   0x84  Data  Gb  tsi_object.o [1]
+TSI_ConfigScanTiming          0xf61   0x7c  Code  Lc  fm33fh0xx_tsi_driver.o [1]
+TSI_ConfigSensor              0xde5  0x16a  Code  Lc  fm33fh0xx_tsi_driver.o [1]
+TSI_DeInit                   0x1def   0x38  Code  Gb  tsi.o [1]
+TSI_Debounce_Button0    0x2000'04e4    0x1  Data  Lc  tsi_object.o [1]
+TSI_Debounce_Button1    0x2000'04e5    0x1  Data  Lc  tsi_object.o [1]
+TSI_Debounce_Button2    0x2000'04e6    0x1  Data  Lc  tsi_object.o [1]
+TSI_Debounce_Button3    0x2000'04e7    0x1  Data  Lc  tsi_object.o [1]
+TSI_Debounce_Button4    0x2000'04e8    0x1  Data  Lc  tsi_object.o [1]
+TSI_Debounce_Button5    0x2000'04e9    0x1  Data  Lc  tsi_object.o [1]
+TSI_Debounce_Button6    0x2000'04ea    0x1  Data  Lc  tsi_object.o [1]
+TSI_Debounce_Button7    0x2000'04eb    0x1  Data  Lc  tsi_object.o [1]
+TSI_Dev_ClearWDT              0xd99    0x8  Code  Gb  fm33fh0xx_tsi_driver.o [1]
+TSI_Dev_Deinit                0x2a9   0x4a  Code  Gb  fm33fh0xx_tsi_driver.o [1]
+TSI_Dev_GetMCConvCycleNum
+                              0xd8f    0xa  Code  Gb  fm33fh0xx_tsi_driver.o [1]
+TSI_Dev_GetMCSnsInputClock
+                              0xce3   0x30  Code  Gb  fm33fh0xx_tsi_driver.o [1]
+TSI_Dev_GetMCTXClock          0xd67   0x14  Code  Gb  fm33fh0xx_tsi_driver.o [1]
+TSI_Dev_GetModClock           0xc9d    0xe  Code  Gb  fm33fh0xx_tsi_driver.o [1]
+TSI_Dev_GetSCConvCycleNum
+                              0xd85    0xa  Code  Gb  fm33fh0xx_tsi_driver.o [1]
+TSI_Dev_GetSCSnsInputClock
+                              0xcb1   0x32  Code  Gb  fm33fh0xx_tsi_driver.o [1]
+TSI_Dev_GetSCSwitchClock
+                              0xd19   0x4e  Code  Gb  fm33fh0xx_tsi_driver.o [1]
+TSI_Dev_Handler               0xa29  0x274  Code  Gb  fm33fh0xx_tsi_driver.o [1]
+TSI_Dev_IDACCurrentTable
+                             0x82a4   0x1c  Data  Lc  tsi_calibration.o [1]
+TSI_Dev_IDACCurrentTable
+                             0x82c0   0x1c  Data  Lc  tsi_utils.o [1]
+TSI_Dev_Init                  0x195  0x114  Code  Gb  fm33fh0xx_tsi_driver.o [1]
+TSI_Dev_ResetAllShields
+                              0x611   0x16  Code  Gb  fm33fh0xx_tsi_driver.o [1]
+TSI_Dev_ResetClock            0x505   0x46  Code  Gb  fm33fh0xx_tsi_driver.o [1]
+TSI_Dev_ResetPort             0x589   0x52  Code  Gb  fm33fh0xx_tsi_driver.o [1]
+TSI_Dev_SetupClock            0x34d  0x1a8  Code  Gb  fm33fh0xx_tsi_driver.o [1]
+TSI_Dev_SetupDirectClock
+                              0xd7b    0xa  Code  Gb  fm33fh0xx_tsi_driver.o [1]
+TSI_Dev_SetupPort             0x551   0x34  Code  Gb  fm33fh0xx_tsi_driver.o [1]
+TSI_Dev_SetupScanGroup        0x63d  0x136  Code  Gb  fm33fh0xx_tsi_driver.o [1]
+TSI_Dev_SetupShield           0x5db   0x36  Code  Gb  fm33fh0xx_tsi_driver.o [1]
+TSI_Dev_StartScan             0x789  0x25c  Code  Gb  fm33fh0xx_tsi_driver.o [1]
+TSI_Dev_StopScan              0x9e5   0x30  Code  Gb  fm33fh0xx_tsi_driver.o [1]
+TSI_DisableAllChannel        0x1001    0x8  Code  Lc  fm33fh0xx_tsi_driver.o [1]
+TSI_DisableIT                0x144b   0x1a  Code  Lc  fm33fh0xx_tsi_driver.o [1]
+TSI_Drv                 0x2000'0344   0x34  Data  Gb  tsi_object.o [1]
+TSI_DrvConstInit             0x6760   0x34  Data  Gb  tsi_object.o [1]
+TSI_Drv_DeInit               0x1683   0x7c  Code  Gb  tsi_driver.o [1]
+TSI_Drv_DisableWidget        0x1719   0x1c  Code  Gb  tsi_driver.o [1]
+TSI_Drv_EnableWidget         0x16ff   0x1a  Code  Gb  tsi_driver.o [1]
+TSI_Drv_HandleEndOfScan
+                             0x18c3  0x12e  Code  Gb  tsi_driver.o [1]
+TSI_Drv_HandleSensorData
+                             0x1899   0x2a  Code  Gb  tsi_driver.o [1]
+TSI_Drv_Init                 0x15e9   0x9a  Code  Gb  tsi_driver.o [1]
+TSI_Drv_StartScan            0x1735  0x140  Code  Gb  tsi_driver.o [1]
+TSI_Drv_StopScan             0x1875   0x24  Code  Gb  tsi_driver.o [1]
+TSI_EnableChannel            0x1009   0x22  Code  Lc  fm33fh0xx_tsi_driver.o [1]
+TSI_EnableIT                 0x1435   0x16  Code  Lc  fm33fh0xx_tsi_driver.o [1]
+TSI_Filter_Avg4OrderInit
+                             0x4f0b    0xa  Code  Gb  tsi_filter.o [1]
+TSI_Filter_Avg4OrderUpdate
+                             0x4f15   0x22  Code  Gb  tsi_filter.o [1]
+TSI_Filter_Button0      0x2000'0378   0x20  Data  Lc  tsi_object.o [1]
+TSI_Filter_Button1      0x2000'0398   0x20  Data  Lc  tsi_object.o [1]
+TSI_Filter_Button2      0x2000'03b8   0x20  Data  Lc  tsi_object.o [1]
+TSI_Filter_Button3      0x2000'03d8   0x20  Data  Lc  tsi_object.o [1]
+TSI_Filter_Button4      0x2000'03f8   0x20  Data  Lc  tsi_object.o [1]
+TSI_Filter_Button5      0x2000'0418   0x20  Data  Lc  tsi_object.o [1]
+TSI_Filter_Button6      0x2000'0438   0x20  Data  Lc  tsi_object.o [1]
+TSI_Filter_Button7      0x2000'0458   0x20  Data  Lc  tsi_object.o [1]
+TSI_Filter_Bypass            0x4ea3   0x1e  Code  Gb  tsi_filter.o [1]
+TSI_Filter_IIRInit           0x4f7f    0xa  Code  Gb  tsi_filter.o [1]
+TSI_Filter_IIRUpdate         0x4f89   0x4a  Code  Gb  tsi_filter.o [1]
+TSI_Filter_Init              0x4e59   0x4a  Code  Gb  tsi_filter.o [1]
+TSI_Filter_Med3OrderInit
+                             0x4f37    0x8  Code  Gb  tsi_filter.o [1]
+TSI_Filter_Med3OrderUpdate
+                             0x4f3f   0x40  Code  Gb  tsi_filter.o [1]
+TSI_Filter_Update            0x4ec1   0x4a  Code  Gb  tsi_filter.o [1]
+TSI_FindPeak1D               0x421f  0x126  Code  Lc  tsi_processing.o [1]
+TSI_GetTick                  0x20e9    0xc  Code  Gb  tsi.o [1]
+TSI_GetTimerTick             0x4e53    0x4  Code  Gb  tsi_utils.o [1]
+TSI_HandleCommand            0x20f5  0x5e8  Code  Lc  tsi.o [1]
+TSI_Handler                  0x1fa1  0x13c  Code  Gb  tsi.o [1]
+TSI_IOConf                   0x67f4   0x18  Data  Lc  tsi_object.o [1]
+TSI_Init                     0x1d75   0x7a  Code  Gb  tsi.o [1]
+TSI_InitCompletedCallback
+                             0x79ed   0x2a  Code  Lc  tsi_plugin_widget_timeout.o [1]
+TSI_InitObjects              0x2a51   0x84  Code  Gb  tsi_object.o [1]
+TSI_IsScanning                0xf4f   0x12  Code  Lc  fm33fh0xx_tsi_driver.o [1]
+TSI_LIB$$Base           0x2000'0000          --   Gb  - Linker created -
+TSI_LIB$$Limit          0x2000'04ec          --   Gb  - Linker created -
+TSI_LIB_CONSTS$$Base         0x6240          --   Gb  - Linker created -
+TSI_LIB_CONSTS$$Limit        0x68c4          --   Gb  - Linker created -
+TSI_LibHandle           0x2000'0000   0x44  Data  Gb  tsi_object.o [1]
+TSI_LoadIDAC1Trim            0x11e5  0x108  Code  Lc  fm33fh0xx_tsi_driver.o [1]
+TSI_LoadIDAC2Trim            0x12fd  0x10c  Code  Lc  fm33fh0xx_tsi_driver.o [1]
+TSI_MetaSensors              0x6640  0x120  Data  Gb  tsi_object.o [1]
+TSI_MetaWidgets              0x6580   0xc0  Data  Gb  tsi_object.o [1]
+TSI_NormalBaseline_Init
+                             0x40fd   0x42  Code  Lc  tsi_processing.o [1]
+TSI_NormalBaseline_Update
+                             0x413f   0xa6  Code  Lc  tsi_processing.o [1]
+TSI_NormalizeSelfCapWidgetIDACCode
+                             0x3345  0x126  Code  Lc  tsi_calibration.o [1]
+TSI_PLUGINS_BEGIN            0x68b0    0x4  Data  Lc  tsi_plugin.o [1]
+TSI_PLUGINS_END              0x68c0    0x4  Data  Lc  tsi_plugin.o [1]
+TSI_Peak1D              0x2000'0b3c    0x8  Data  Lc  tsi_processing.o [1]
+TSI_Peak1DNum           0x2000'0b61    0x1  Data  Lc  tsi_processing.o [1]
+TSI_Plugin                   0x68b4    0x4  Data  Lc  tsi_plugin_commnoise.o [1]
+TSI_Plugin                   0x68b8    0x4  Data  Lc  tsi_plugin_sc_margin_calibration.o [1]
+TSI_Plugin                   0x68bc    0x4  Data  Lc  tsi_plugin_widget_timeout.o [1]
+TSI_Plugin_CommNoise_Callback
+                             0x812c   0x28  Data  Lc  tsi_plugin_commnoise.o [1]
+TSI_Plugin_Init              0x2c19   0x66  Code  Gb  tsi_plugin.o [1]
+TSI_Plugin_SCMarginCalibration_Callback
+                             0x8154   0x28  Data  Lc  tsi_plugin_sc_margin_calibration.o [1]
+TSI_Plugin_WidgetTimeout_Callback
+                             0x817c   0x28  Data  Lc  tsi_plugin_widget_timeout.o [1]
+TSI_Plugin_deInitCompleted_Callback
+                             0x2afd   0x28  Code  Gb  tsi_plugin.o [1]
+TSI_Plugin_initCompleted_Callback
+                             0x2ad5   0x28  Code  Gb  tsi_plugin.o [1]
+TSI_Plugin_started_Callback
+                             0x2b25   0x28  Code  Gb  tsi_plugin.o [1]
+TSI_Plugin_stopped_Callback
+                             0x2b4d   0x28  Code  Gb  tsi_plugin.o [1]
+TSI_Plugin_widgetInitCompleted_Callback
+                             0x2b75   0x2c  Code  Gb  tsi_plugin.o [1]
+TSI_Plugin_widgetScanCompleted_Callback
+                             0x2ba1   0x28  Code  Gb  tsi_plugin.o [1]
+TSI_Plugin_widgetStatusUpdated_Callback
+                             0x2bf1   0x28  Code  Gb  tsi_plugin.o [1]
+TSI_Plugin_widgetValueUpdated_Callback
+                             0x2bc9   0x28  Code  Gb  tsi_plugin.o [1]
+TSI_ReadData                 0x1465    0x6  Code  Lc  fm33fh0xx_tsi_driver.o [1]
+TSI_ResetGroundOutput        0x1571   0x22  Code  Lc  fm33fh0xx_tsi_driver.o [1]
+TSI_ResetModule               0xda1   0x3a  Code  Lc  fm33fh0xx_tsi_driver.o [1]
+TSI_Resume                   0x1ec3   0x4c  Code  Gb  tsi.o [1]
+TSI_ScanAndInitAllWidgets
+                             0x1f6f   0x32  Code  Gb  tsi.o [1]
+TSI_ScanAndInitMutualCapWidget
+                             0x28b1  0x1a0  Code  Lc  tsi.o [1]
+TSI_ScanAndInitSelfCapWidget
+                             0x26dd  0x1ca  Code  Lc  tsi.o [1]
+TSI_ScanAndInitSelfCapWidget::tmpSCScanGroup
+                        0x2000'0548    0xc  Data  Lc  tsi.o [1]
+TSI_ScanAndInitSelfCapWidget::tmpSCSensorList
+                        0x2000'0b4c    0x2  Data  Lc  tsi.o [1]
+TSI_ScanAndInitWidget        0x1f0f   0x60  Code  Gb  tsi.o [1]
+TSI_ScanGroupFirst           0x19f1   0x1c  Code  Lc  tsi_driver.o [1]
+TSI_ScanGroupNext            0x1a0d  0x174  Code  Lc  tsi_driver.o [1]
+TSI_ScanGrp0                 0x6820    0xc  Data  Lc  tsi_object.o [1]
+TSI_ScanGrpHead              0x6814    0xc  Data  Lc  tsi_object.o [1]
+TSI_ScanGrpSnsList0          0x830c   0x10  Data  Lc  tsi_object.o [1]
+TSI_SensorList          0x2000'0184  0x1c0  Data  Gb  tsi_object.o [1]
+TSI_SensorListConstInit
+                             0x6380  0x1c0  Data  Gb  tsi_object.o [1]
+TSI_SensorPointers           0x6560   0x20  Data  Gb  tsi_object.o [1]
+TSI_Sensor_Init              0x3a9b   0x30  Code  Gb  tsi_processing.o [1]
+TSI_Sensor_UpdateDiffCount
+                             0x41e5   0x3a  Code  Lc  tsi_processing.o [1]
+TSI_Sensor_UpdateStatus
+                             0x4053   0xaa  Code  Lc  tsi_processing.o [1]
+TSI_SetChannelRx             0x104d   0x22  Code  Lc  fm33fh0xx_tsi_driver.o [1]
+TSI_SetChannelTx             0x102b   0x22  Code  Lc  fm33fh0xx_tsi_driver.o [1]
+TSI_SetGroundOutput          0x146b   0xb0  Code  Lc  fm33fh0xx_tsi_driver.o [1]
+TSI_SetIDAC1Step             0x106f   0xae  Code  Lc  fm33fh0xx_tsi_driver.o [1]
+TSI_SetIDAC2Step             0x1121   0xae  Code  Lc  fm33fh0xx_tsi_driver.o [1]
+TSI_ShieldConf               0x680c    0x8  Data  Lc  tsi_object.o [1]
+TSI_Start                    0x1e27   0x54  Code  Gb  tsi.o [1]
+TSI_Suspend                  0x1e7b   0x48  Code  Gb  tsi.o [1]
+TSI_TimeoutCallback          0x15e3    0x4  Code  Wk  tsi.o [1]
+TSI_TimerContext        0x2000'0478    0xc  Data  Lc  tsi_object.o [1]
+TSI_TimerHandler             0x4e29   0x2a  Code  Gb  tsi_utils.o [1]
+TSI_TuneMutualCapWidgetIDACCode
+                             0x36e9  0x1a6  Code  Lc  tsi_calibration.o [1]
+TSI_TuneSelfCapWidgetCompIDACCode
+                             0x3501  0x1de  Code  Lc  tsi_calibration.o [1]
+TSI_TuneSelfCapWidgetIDACCode
+                             0x3017  0x258  Code  Lc  tsi_calibration.o [1]
+TSI_TuneSelfCapWidgetIDACStep
+                             0x326f   0xce  Code  Lc  tsi_calibration.o [1]
+TSI_TuneSelfCapWidgetResolution
+                             0x346b   0x92  Code  Lc  tsi_calibration.o [1]
+TSI_WidgetList          0x2000'0044  0x140  Data  Gb  tsi_object.o [1]
+TSI_WidgetListConstInit
+                             0x6240  0x140  Data  Gb  tsi_object.o [1]
+TSI_WidgetPointers           0x6540   0x20  Data  Gb  tsi_object.o [1]
+TSI_WidgetUpdateCpltCallback
+                             0x4bb9    0x2  Code  Gb  main.o [1]
+TSI_Widget_BaselineInit
+                             0x78b5   0x8a  Code  Lc  tsi_plugin_commnoise.o [1]
+TSI_Widget_Disable           0x3a13   0x10  Code  Gb  tsi_processing.o [1]
+TSI_Widget_DisableAll        0x39e1   0x32  Code  Gb  tsi_processing.o [1]
+TSI_Widget_Enable            0x39d1   0x10  Code  Gb  tsi_processing.o [1]
+TSI_Widget_EnableAll         0x399f   0x32  Code  Gb  tsi_processing.o [1]
+TSI_Widget_Init              0x38c3   0xdc  Code  Gb  tsi_processing.o [1]
+TSI_Widget_InitAll           0x3891   0x32  Code  Gb  tsi_processing.o [1]
+TSI_Widget_InitMutualCapButton
+                             0x3cf1    0x8  Code  Lc  tsi_processing.o [1]
+TSI_Widget_InitMutualCapSlider
+                             0x3cf9   0x32  Code  Lc  tsi_processing.o [1]
+TSI_Widget_InitSelfCapButton
+                             0x3c41    0x8  Code  Lc  tsi_processing.o [1]
+TSI_Widget_InitSelfCapProximity
+                             0x3c49    0x8  Code  Lc  tsi_processing.o [1]
+TSI_Widget_InitSelfCapRadialSlider
+                             0x3c83   0x30  Code  Lc  tsi_processing.o [1]
+TSI_Widget_InitSelfCapSlider
+                             0x3c51   0x32  Code  Lc  tsi_processing.o [1]
+TSI_Widget_InitSelfCapTouchpad
+                             0x3cb3   0x3e  Code  Lc  tsi_processing.o [1]
+TSI_Widget_IsBaselineAtMargin
+                             0x7ec3   0x62  Code  Lc  tsi_plugin_sc_margin_calibration.o [1]
+TSI_Widget_ProcessDiffAndBaseline
+                             0x3af3   0x56  Code  Lc  tsi_processing.o [1]
+TSI_Widget_ProcessPrivateData
+                             0x3bcb   0x76  Code  Lc  tsi_processing.o [1]
+TSI_Widget_ProcessStatusAndBaseline
+                             0x3b49   0x82  Code  Lc  tsi_processing.o [1]
+TSI_Widget_StatusUpdateCallback
+                             0x7e79   0x4a  Code  Lc  tsi_plugin_sc_margin_calibration.o [1]
+TSI_Widget_StatusUpdateCallback
+                             0x7a17  0x14c  Code  Lc  tsi_plugin_widget_timeout.o [1]
+TSI_Widget_UpdateAll         0x3a23   0x78  Code  Gb  tsi_processing.o [1]
+TSI_Widget_UpdateMutualCapButton
+                             0x3fbf    0x8  Code  Lc  tsi_processing.o [1]
+TSI_Widget_UpdateMutualCapSlider
+                             0x3fc7   0x8c  Code  Lc  tsi_processing.o [1]
+TSI_Widget_UpdateSelfCapButton
+                             0x3d2b    0x8  Code  Lc  tsi_processing.o [1]
+TSI_Widget_UpdateSelfCapProximity
+                             0x3d33   0x38  Code  Lc  tsi_processing.o [1]
+TSI_Widget_UpdateSelfCapRadialSlider
+                             0x3df7   0x94  Code  Lc  tsi_processing.o [1]
+TSI_Widget_UpdateSelfCapSlider
+                             0x3d6b   0x8c  Code  Lc  tsi_processing.o [1]
+TSI_Widget_UpdateSelfCapTouchpad
+                             0x3e8b  0x134  Code  Lc  tsi_processing.o [1]
+TSI_Widget_ValueUpdateCallback
+                             0x7775  0x138  Code  Lc  tsi_plugin_commnoise.o [1]
+TSI_Widget_isComNoise        0x793f   0xae  Code  Lc  tsi_plugin_commnoise.o [1]
+Timer20msInit                0x4a39   0x5c  Code  Gb  main.o [1]
+Uart5_Init                   0x45fd   0x96  Code  Gb  main.o [1]
+ValidateDataPacket           0x6cc5   0x9a  Code  Lc  bdp_mem_interface.o [1]
+ValidateTokenPacket          0x6c31   0x8a  Code  Lc  bdp_mem_interface.o [1]
+XTHFClock               0x2000'0540    0x4  Data  Gb  system_fm33fh0xx.o [1]
+__ICFEDIT_region_RAM_end__ {Abs}
+                        0x2000'7fff         Data  Gb  <internal module>
+__ICFEDIT_region_RAM_start__ {Abs}
+                        0x2000'0000         Data  Gb  <internal module>
+__aeabi_f2uiz                0x5ad9         Code  Gb  FltToU32.o [3]
+__aeabi_idiv                 0x1c09         Code  Gb  I32DivModFast.o [4]
+__aeabi_idiv0                0x1d59         Code  Gb  IntDivZer.o [4]
+__aeabi_idivmod              0x1c09         Code  Gb  I32DivModFast.o [4]
+__aeabi_ldiv0                0x1d5d         Code  Gb  I64DivZer.o [4]
+__aeabi_lmul                 0x1cbd         Code  Gb  I64Mul.o [4]
+__aeabi_memcpy               0x4fd5         Code  Gb  ABImemcpy.o [4]
+__aeabi_memset               0x1595         Code  Gb  ABImemset.o [4]
+__aeabi_uidiv                0x1c0f         Code  Gb  I32DivModFast.o [4]
+__aeabi_uidivmod             0x1c0f         Code  Gb  I32DivModFast.o [4]
+__aeabi_uldivmod             0x1cef         Code  Gb  I64DivMod.o [4]
+__cmain                      0x823d         Code  Gb  cmain.o [4]
+__exit                       0x8275   0x14  Code  Gb  exit.o [5]
+__iar_Memset4_word           0x15b5         Code  Gb  ABImemset.o [4]
+__iar_Memset_word            0x15a1         Code  Gb  ABImemset.o [4]
+__iar_close_ttio             0x80f5   0x2e  Code  Gb  iarttio.o [5]
+__iar_data_init3             0x81a5   0x28  Code  Gb  data_init.o [4]
+__iar_lookup_ttioh           0x8125    0x8  Code  Gb  XShttio.o [2]
+__iar_packbits_init_single3
+                             0x8089   0x3c  Code  Gb  packbits_init_single.o [4]
+__iar_program_start          0x832d         Code  Gb  cstartup_M.o [4]
+__iar_ttio_handles      0x2000'0560    0x8  Data  Lc  XShttio.o [2]
+__iar_zero_init3             0x804d   0x3c  Code  Gb  zero_init3.o [4]
+__low_level_init             0x825b    0x4  Code  Gb  low_level_init.o [2]
+__vector_table                  0x0         Data  Gb  startup_fm33fh0xx.o [1]
+_call_main                   0x8249         Code  Gb  cmain.o [4]
+_exit                        0x8269         Code  Gb  cexit.o [4]
+_main                        0x8257         Code  Gb  cmain.o [4]
+ackBuffer               0x2000'0b34    0x8  Data  Lc  bdp_mem_interface.o [1]
+activeTimeoutCounter    0x2000'0aa8   0x20  Data  Lc  tsi_plugin_widget_timeout.o [1]
+calibSCScanGroup        0x2000'0554    0xc  Data  Lc  tsi_calibration.o [1]
+calibSCSensorList       0x2000'0b4e    0x2  Data  Lc  tsi_calibration.o [1]
+crc16HiTable                 0x7c78  0x100  Data  Lc  bdp_mem_interface.o [1]
+crc16LoTable                 0x7d78  0x100  Data  Lc  bdp_mem_interface.o [1]
+crc8Table                    0x7b78  0x100  Data  Lc  bdp_mem_interface.o [1]
+data                    0x2000'04ec   0x50  Data  Gb  led.o [1]
+data                    0x2000'053c    0x4  Data  Lc  main.o [1]
+dataBuffer              0x2000'056c  0x404  Data  Lc  bdp_mem_interface.o [1]
+devPrivateData          0x2000'0970   0xa8  Data  Lc  fm33fh0xx_tsi_driver.o [1]
+diffTimeoutCounter      0x2000'0ac8   0x20  Data  Lc  tsi_plugin_widget_timeout.o [1]
+exit                         0x825f    0x8  Code  Gb  exit.o [2]
+flag_send_100ms         0x2000'0b5c    0x1  Data  Gb  main.o [1]
+freq                    0x2000'0b5e    0x1  Data  Gb  timer.o [1]
+g_poll_id_list               0x8340    0x8  Data  Lc  main.o [1]
+g_poll_idx              0x2000'0b5a    0x1  Data  Lc  main.o [1]
+g_rx_active             0x2000'0b53    0x1  Data  Gb  main.o [1]
+g_rx_buf                0x2000'0a68   0x40  Data  Lc  main.o [1]
+g_rx_idx                0x2000'0b59    0x1  Data  Lc  main.o [1]
+g_rx_timeout            0x2000'0b55    0x1  Data  Gb  main.o [1]
+g_rx_to_cnt             0x2000'0b54    0x1  Data  Gb  main.o [1]
+g_tx_buf                0x2000'0b1c   0x10  Data  Lc  main.o [1]
+g_tx_busy               0x2000'0b58    0x1  Data  Lc  main.o [1]
+g_tx_idx                0x2000'0b57    0x1  Data  Lc  main.o [1]
+g_tx_len                0x2000'0b56    0x1  Data  Lc  main.o [1]
+io_init                      0x45ab   0x4c  Code  Gb  main.o [1]
+main                         0x4b01   0xb0  Code  Gb  main.o [1]
+miaoflag_5              0x2000'0a18   0x50  Data  Gb  main.o [1]
+negCommNoiseTimeCnt     0x2000'0b5f    0x1  Data  Lc  tsi_plugin_commnoise.o [1]
+oldTick                 0x2000'0b48    0x4  Data  Lc  tsi_plugin_widget_timeout.o [1]
+pLib                    0x2000'0b44    0x4  Data  Lc  bdp_user.o [1]
+selfCapWidgetEnableNum  0x2000'0b60    0x1  Data  Lc  tsi_plugin_commnoise.o [1]
+stat                    0x2000'0b50    0x1  Data  Lc  bdp_mem_interface.o [1]
+tokenBuffer             0x2000'0b2c    0x8  Data  Lc  bdp_mem_interface.o [1]
+transfer                0x2000'0b04   0x18  Data  Lc  bdp_mem_interface.o [1]
+transferType            0x2000'0b51    0x1  Data  Lc  bdp_mem_interface.o [1]
+unit                    0x2000'0568    0x2  Data  Gb  main.o [1]
+
+
+[1] = C:\Users\nouriP\Downloads\FM33LR0XX_IAR_¼Ä´æÆ÷°æ±¾\1128_demo_uart4\EWARM\0407\Obj
+[2] = dl6M_tlf.a
+[3] = m6M_tl.a
+[4] = rt6M_tl.a
+[5] = shb_l.a
+
+  27 938 bytes of readonly  code memory
+   5 768 bytes of readonly  data memory
+   4 960 bytes of readwrite data memory
+
+Errors: none
+Warnings: none
